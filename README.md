@@ -1,7 +1,7 @@
 # 💸🛎️📊ANALISIS KINERJA SISTEM ANTRIAN MENGGUNAKAN MODEL M/G/1 (STUDI KASUS: KASIR KANTIN BKL (BUKIT KIARA LESTARI) INSTITUT TEKNOLOGI SUMATERA) 
 
 ## 📑Description
-Repositori ini berisikan data, kode R, dan file tambahan lainnya mengenai Analisis Kinerja Sistem Antrian Menggunakan Model M/G/1 (STUDI KASUS: Kasir Kantin BKL ITERA).
+Repositori ini berisikan data, kode R, dan file tambahan lainnya mengenai Analisis Kinerja Sistem Antrian Menggunakan Model M/G/1 (Studi Kasus: Kasir Kantin BKL ITERA).
 
 ## 🎯Goals
 1. Mengidentifikasi dan memvalidasi distribusi data waktu kedatangan dan waktu pelayanan pada kasir Kantin Bukit Kiara Lestari (BKL) untuk menentukan model antrian yang sesuai. 
@@ -37,7 +37,7 @@ Pola data tidak simetris menandakan service time tidak mengikuti eksponensial. T
 
 <img src="assets/SWtest.png" alt="SWtest" width="400"> <img src="assets/Gamma.png" alt="Gamma" width="400">
 
-Dilakukan uji Shapiro-Wilk hasilnya menunjukkan p-value < 0.05 sehingga distribusi normal ditolak. Maka dilakukan perbandingan beberapa kandidat distribusi dan Gamma memiliki nilai AIC dan BIC paling kecil, sehingga distribusi untuk service time adalah distribusi Gamma. **Maka terpilihlah model M/G/1 mengikuti interarrival time yang berdistribusi eksponensial, service time yang berdistribusi gamma, dan 1 server pelayanan yang diobservasi.**
+Dilakukan uji Shapiro-Wilk hasilnya menunjukkan p-value < 0.05 sehingga distribusi normal ditolak. Maka dilakukan perbandingan beberapa kandidat distribusi dan Gamma memiliki nilai AIC dan BIC paling kecil, sehingga distribusi untuk service time adalah distribusi Gamma.
 
 ### 2. Perhitungan ukuran kinerja sistem antrian M/G/1
 Model M/G/1 digunakan untuk kedatangan Markovian (M) dan pelayanan berdistribusi Gamma/General (G) dengan satu pelayan. Parameter yang diperoleh adalah :  
@@ -71,7 +71,7 @@ Server tidak overload karena utilisasi masih di bawah 1. Namun, variabilitas pel
 | W (waktu total dalam sistem, detik) | 71.97 | 151.67 | 133.54 |
 
 **Penjelasan singkat:**  
-Hasilnya nilai empiris seluruh metrik lebih tinggi dibandingkan prediksi teoritis. Seperti pada metrik Lq (pelanggan dalam antrian), teori memprediksi 0.9 orang tetapi kenyataan mencapai 2.7 orang, dan simulasi memberikan nilai 2.1 orang yang lebih mendekati kondisi nyata. Hal yang sama terjadi pada metrik L (pelanggan dalam sistem), Wq (waktu tunggu dalam antrian), dan W (waktu total dalam sistem) yang nilai teorisnya jauh lebih rendah dibandingkan nilai empiris dan simulasi. Perbedaan besar paada nilai teori ini disebabkan oleh variasi lama pelayanan pada keadaan nyata, sementara simulasi dapat menangkap kondisi fluktuatif sehingga menghasilkan estimasi yang berada di antara nilai ideal teori dan kondisi empiris.
+Hasilnya nilai empiris seluruh metrik lebih tinggi dibandingkan prediksi teoritis. Perbedaan besar pada nilai teori ini disebabkan oleh variasi lama pelayanan pada keadaan nyata, sementara simulasi dapat menangkap kondisi fluktuatif sehingga menghasilkan estimasi yang berada di antara nilai ideal teori dan kondisi empiris.
 
 ## 👥Authors
 **Presilia**
