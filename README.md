@@ -26,10 +26,13 @@ Diagram alir proses analisis kinerja sistem antrian menggunakan model M/G/1 yang
 ## 🔎Main Results
 ### Identifikasi dan validasi distribusi interarrival dan service time
 #### Distribusi interarrival time
-<img src="assets/HisInter.png" alt="Histogram Interarrival" width="300">, <img src="assets/QQInter.png" alt="QQ-Plot interarrival time" width="300">
+<img src="assets/HisInter.png" alt="Histogram Interarrival Time" width="400">, <img src="assets/QQInter.png" alt="QQ-Plot interarrival time" width="400">
+
 Distribusi waktu antar kedatangan menunjukkan pola menurun seperti eksponensial, dan itik data mengikuti garis teoretis sehingga cocok dengan distribusi eksponensial.
 
 #### Distribusi service time
+<img src="assets/HisSer.png" alt="Histogram Service Time" width="400">, <img src="assets/QQSer.png" alt="QQ-Plot Service Time" width="400">
+Pola data tidak simetris menandakan service time tidak mengikuti eksponensial. Titik menjauhi garis lurus sehingga asumsi eksponensial ditolak. Maka dilakukan uji distribusi lain
 
 ### Perhitungan ukuran kinerja sistem antrian
 ![Histogram Interarrival Time](assets/HisInter.jpg)
