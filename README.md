@@ -21,8 +21,19 @@ Repositori ini berisikan data, kode R, dan file tambahan lainnya mengenai Analis
 
 ## 📂Method
 Diagram alir proses analisis kinerja sistem antrian menggunakan model M/G/1 yang digunakan dalam proyek ini:
-![Diagram Alir Penelitian](gambar/Diagram.jpg)
+![Diagram Alir Penelitian](assets/diagram.jpg)
 
 ## 🔎Main Results
 
 ## 👥Authors
+**Presilia**
+presilia.122450081@student.itera.ac.id
+
+**Fadhil  Fitra Wijaya**
+fadhil.122450082@student.itera.ac.id
+
+**Reynaldi Rahmad**
+reynaldi.122450088@student.itera.ac.id
+
+**Irvan alfaritzi**
+irvan.122450093@student.itera.ac.id
