@@ -24,7 +24,7 @@ Diagram alir proses analisis kinerja sistem antrian menggunakan model M/G/1 yang
 ![Diagram Alir Penelitian](assets/diagram.jpg)
 
 ## 🔎Main Results
-### Identifikasi dan validasi distribusi interarrival dan service time
+### 1. Identifikasi dan validasi distribusi interarrival dan service time
 #### Distribusi interarrival time
 <img src="assets/HisInter.png" alt="Histogram Interarrival Time" width="400"> <img src="assets/QQInter.png" alt="QQ-Plot interarrival time" width="400">
 
@@ -39,7 +39,7 @@ Pola data tidak simetris menandakan service time tidak mengikuti eksponensial. T
 
 Dilakukan uji Shapiro-Wilk hasilnya menunjukkan p-value < 0.05 sehingga distribusi normal ditolak. Maka dilakukan perbandingan beberapa kandidat distribusi dan Gamma memiliki nilai AIC dan BIC paling kecil, sehingga distribusi untuk service time adalah distribusi Gamma. **Maka terpilihlah model M/G/1 mengikuti interarrival time yang berdistribusi eksponensial, service time yang berdistribusi gamma, dan 1 server pelayanan yang diobservasi.**
 
-### Perhitungan ukuran kinerja sistem antrian M/G/1
+### 2. Perhitungan ukuran kinerja sistem antrian M/G/1
 Model M/G/1 digunakan untuk kedatangan Markovian (M) dan pelayanan berdistribusi Gamma/General (G) dengan satu pelayan. Parameter yang diperoleh adalah :  
 - Laju kedatangan (λ) = 0,0224 pelanggan/detik.
 - Rata-rata pelayanan (E[S]) = 31,40 detik. 
@@ -59,7 +59,7 @@ Model M/G/1 digunakan untuk kedatangan Markovian (M) dan pelayanan berdistribusi
 
 Server tidak overload karena utilisasi masih di bawah 1. Namun, variabilitas pelayanan yang cukup besar menyebabkan waktu tunggu semakin memanjang meskipun sistem masih dalam kondisi stabil.
 
-### Evaluasi dan perbandingan hasil analisis teoretis, hasil simulasi, dan data aktual (empiris)
+### 3. Evaluasi dan perbandingan hasil analisis teoretis, hasil simulasi, dan data aktual (empiris)
 
 **Tabel Perbandingan Hasil**
 
