@@ -35,14 +35,30 @@ Distribusi waktu antar kedatangan menunjukkan pola menurun seperti eksponensial,
 
 Pola data tidak simetris menandakan service time tidak mengikuti eksponensial. Titik menjauhi garis lurus sehingga asumsi eksponensial ditolak. Maka dilakukan uji distribusi lain
 
-<img src="assets/SWtest.png" alt="SWtest" width="400"> <img src="assets/Gammma.png" alt="Gamma" width="400">
+<img src="assets/SWtest.png" alt="SWtest" width="400"> <img src="assets/Gamma.png" alt="Gamma" width="400">
 
 Dilakukan uji Shapiro-Wilk hasilnya menunjukkan p-value < 0.05 sehingga distribusi normal ditolak. Maka dilakukan perbandingan beberapa kandidat distribusi dan Gamma memiliki nilai AIC dan BIC paling kecil, sehingga distribusi untuk service time adalah distribusi Gamma.
 
-Maka dari itu terpilihlah model M/G/1 mengikuti interarrival time yang berdistribusi eksponensial, service time yang berdistribusi gamma, dan 1 server pelayanan yang diobservasi.
+**Maka dari itu terpilihlah model M/G/1 mengikuti interarrival time yang berdistribusi eksponensial, service time yang berdistribusi gamma, dan 1 server pelayanan yang diobservasi.**
 
-### Perhitungan ukuran kinerja sistem antrian
-![Histogram Interarrival Time](assets/HisInter.jpg)
+### Perhitungan ukuran kinerja sistem antrian M/G/1
+Model M/G/1 digunakan untuk kedatangan Markovian (M) dan pelayanan berdistribusi Gamma/General (G) dengan satu pelayan. Parameter yang diperoleh adalah :  
+-Laju kedatangan (λ) = 0,0224 pelanggan/detik. 
+-Rata-rata pelayanan (E[S]) = 31,40 detik. 
+-Variansi pelayanan (Var(S)) = 84,84. 
+-Faktor utilisasi (ρ) = 0,704 (70,4%). 
+
+<img src="assets/Sim.png" alt="Simulasi MG!" width="500">
+### Hasil Performa Simulasi M/G/1
+
+| Metrik | Nilai |
+|---|---:|
+| L_sim (jumlah pelanggan dalam sistem) | 2.995 |
+| Lq_sim (jumlah pelanggan dalam antrian) | 2.096 |
+| W_sim (waktu total dalam sistem, detik) | 133.538 |
+| Wq_sim (waktu tunggu antrian, detik) | 93.422 |
+
+Server tidak overload karena utilisasi masih di bawah 1. Namun, variabilitas pelayanan yang cukup besar menyebabkan waktu tunggu semakin memanjang meskipun sistem masih dalam kondisi stabil.
 
 
 ### Evaluasi dan perbandingan hasil analisis teoretis, hasil simulasi, dan data aktual (empiris)
