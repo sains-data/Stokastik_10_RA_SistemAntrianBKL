@@ -1,8 +1,12 @@
 # 💸🛎️📊ANALISIS KINERJA SISTEM ANTRIAN MENGGUNAKAN MODEL M/G/1 (STUDI KASUS: KASIR KANTIN BKL (BUKIT KIARA LESTARI) INSTITUT TEKNOLOGI SUMATERA) 
 
 ## 📑Description
+Repositori ini berisikan data, kode R, dan file tambahan lainnya mengenai Analisis Kinerja Sistem Antrian Menggunakan Model M/G/1 (STUDI KASUS: Kasir Kantin BKL ITERA).
 
 ## 🎯Goals
+1. Mengidentifikasi dan memvalidasi distribusi data waktu kedatangan dan waktu pelayanan pada kasir Kantin Bukit Kiara Lestari (BKL) untuk menentukan model antrian yang sesuai. 
+2. Menghitung ukuran kinerja sistem antrian yang meliputi tingkat utilisasi (ρ), rata-rata jumlah pelanggan dalam antrian (Lq) dan sistem (LS), serta rata-rata waktu tunggu dalam antrian (Wq) dan sistem (Ws) menggunakan formula Pollaczek-Khinchine untuk model M/G/1. 
+3. Membandingkan hasil analisis teoretis, hasil simulasi, dan data aktual untuk   mengevaluasi efisiensi sistem antrian yang berjalan. 
 
 ## ⚙️Technologies Used
 ### Language
