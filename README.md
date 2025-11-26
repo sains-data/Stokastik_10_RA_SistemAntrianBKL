@@ -37,9 +37,7 @@ Pola data tidak simetris menandakan service time tidak mengikuti eksponensial. T
 
 <img src="assets/SWtest.png" alt="SWtest" width="400"> <img src="assets/Gamma.png" alt="Gamma" width="400">
 
-Dilakukan uji Shapiro-Wilk hasilnya menunjukkan p-value < 0.05 sehingga distribusi normal ditolak. Maka dilakukan perbandingan beberapa kandidat distribusi dan Gamma memiliki nilai AIC dan BIC paling kecil, sehingga distribusi untuk service time adalah distribusi Gamma.
-
-**Maka dari itu terpilihlah model M/G/1 mengikuti interarrival time yang berdistribusi eksponensial, service time yang berdistribusi gamma, dan 1 server pelayanan yang diobservasi.**
+Dilakukan uji Shapiro-Wilk hasilnya menunjukkan p-value < 0.05 sehingga distribusi normal ditolak. Maka dilakukan perbandingan beberapa kandidat distribusi dan Gamma memiliki nilai AIC dan BIC paling kecil, sehingga distribusi untuk service time adalah distribusi Gamma. **Maka terpilihlah model M/G/1 mengikuti interarrival time yang berdistribusi eksponensial, service time yang berdistribusi gamma, dan 1 server pelayanan yang diobservasi.**
 
 ### Perhitungan ukuran kinerja sistem antrian M/G/1
 Model M/G/1 digunakan untuk kedatangan Markovian (M) dan pelayanan berdistribusi Gamma/General (G) dengan satu pelayan. Parameter yang diperoleh adalah :  
@@ -49,7 +47,8 @@ Model M/G/1 digunakan untuk kedatangan Markovian (M) dan pelayanan berdistribusi
 -Faktor utilisasi (ρ) = 0,704 (70,4%). 
 
 <img src="assets/Sim.png" alt="Simulasi MG!" width="500">
-### Hasil Performa Simulasi M/G/1
+
+**Hasil Performa Simulasi M/G/1**
 
 | Metrik | Nilai |
 |---|---:|
@@ -60,8 +59,19 @@ Model M/G/1 digunakan untuk kedatangan Markovian (M) dan pelayanan berdistribusi
 
 Server tidak overload karena utilisasi masih di bawah 1. Namun, variabilitas pelayanan yang cukup besar menyebabkan waktu tunggu semakin memanjang meskipun sistem masih dalam kondisi stabil.
 
-
 ### Evaluasi dan perbandingan hasil analisis teoretis, hasil simulasi, dan data aktual (empiris)
+
+**Tabel Perbandingan Hasil**
+
+| Metrik | Teori | Empiris | Simulasi |
+|---|---:|---:|---:|
+| Lq (pelanggan dalam antrian) | 0.91 | 2.70 | 2.10 |
+| L (pelanggan dalam sistem) | 1.61 | 3.40 | 2.99 |
+| Wq (waktu tunggu dalam antrian, detik) | 40.57 | 120.27 | 93.42 |
+| W (waktu total dalam sistem, detik) | 71.97 | 151.67 | 133.54 |
+
+**Penjelasan singkat:**  
+Hasilnya nilasi empiris seluruh metrik lebih tinggi dibandingkan prediksi teoritis. Seperti pada metrik Lq (jumlah pelanggan menunggu), teori memprediksi 0.9 orang tetapi kenyataan mencapai 2.6 orang, dan simulasi memberikan nilai 2.1 orang yang lebih mendekati kondisi nyata. Hal yang sama terjadi pada metrik L (jumlah dalam sistem), Wq (lama pelanggan menunggu), dan W (total waktu dalam sistem) yang nilai teorisnya jauh lebih rendah dibandingkan nilai empiris dan simulasi. Perbedaan besar paada nilai teori ini disebabkan oleh variasi lama pelayanan pada keadaan nyata, sementara simulasi dapat menangkap kondisi fluktuatif sehingga menghasilkan estimasi yang berada di antara nilai ideal teori dan kondisi empiris.
 
 ## 👥Authors
 **Presilia**
