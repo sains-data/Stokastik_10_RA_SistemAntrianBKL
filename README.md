@@ -24,6 +24,13 @@ Diagram alir proses analisis kinerja sistem antrian menggunakan model M/G/1 yang
 ![Diagram Alir Penelitian](assets/diagram.jpg)
 
 ## 🔎Main Results
+### Identifikasi dan validasi distribusi interarrival dan service time
+
+### Perhitungan ukuran kinerja sistem antrian
+![Histogram Interarrival Time](assets/HisInter.jpg)
+
+
+### Evaluasi dan perbandingan hasil analisis teoretis, hasil simulasi, dan data aktual (empiris)
 
 ## 👥Authors
 **Presilia**
