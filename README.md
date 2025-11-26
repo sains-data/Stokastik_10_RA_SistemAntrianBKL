@@ -41,10 +41,10 @@ Dilakukan uji Shapiro-Wilk hasilnya menunjukkan p-value < 0.05 sehingga distribu
 
 ### Perhitungan ukuran kinerja sistem antrian M/G/1
 Model M/G/1 digunakan untuk kedatangan Markovian (M) dan pelayanan berdistribusi Gamma/General (G) dengan satu pelayan. Parameter yang diperoleh adalah :  
--Laju kedatangan (λ) = 0,0224 pelanggan/detik. 
--Rata-rata pelayanan (E[S]) = 31,40 detik. 
--Variansi pelayanan (Var(S)) = 84,84. 
--Faktor utilisasi (ρ) = 0,704 (70,4%). 
+- Laju kedatangan (λ) = 0,0224 pelanggan/detik.
+- Rata-rata pelayanan (E[S]) = 31,40 detik. 
+- Variansi pelayanan (Var(S)) = 84,84. 
+- Faktor utilisasi (ρ) = 0,704 (70,4%). 
 
 <img src="assets/Sim.png" alt="Simulasi MG!" width="500">
 
@@ -71,7 +71,7 @@ Server tidak overload karena utilisasi masih di bawah 1. Namun, variabilitas pel
 | W (waktu total dalam sistem, detik) | 71.97 | 151.67 | 133.54 |
 
 **Penjelasan singkat:**  
-Hasilnya nilasi empiris seluruh metrik lebih tinggi dibandingkan prediksi teoritis. Seperti pada metrik Lq (jumlah pelanggan menunggu), teori memprediksi 0.9 orang tetapi kenyataan mencapai 2.6 orang, dan simulasi memberikan nilai 2.1 orang yang lebih mendekati kondisi nyata. Hal yang sama terjadi pada metrik L (jumlah dalam sistem), Wq (lama pelanggan menunggu), dan W (total waktu dalam sistem) yang nilai teorisnya jauh lebih rendah dibandingkan nilai empiris dan simulasi. Perbedaan besar paada nilai teori ini disebabkan oleh variasi lama pelayanan pada keadaan nyata, sementara simulasi dapat menangkap kondisi fluktuatif sehingga menghasilkan estimasi yang berada di antara nilai ideal teori dan kondisi empiris.
+Hasilnya nilai empiris seluruh metrik lebih tinggi dibandingkan prediksi teoritis. Seperti pada metrik Lq (pelanggan dalam antrian), teori memprediksi 0.9 orang tetapi kenyataan mencapai 2.6 orang, dan simulasi memberikan nilai 2.1 orang yang lebih mendekati kondisi nyata. Hal yang sama terjadi pada metrik L (pelanggan dalam sistem), Wq (waktu tunggu dalam antrian), dan W (waktu total dalam sistem) yang nilai teorisnya jauh lebih rendah dibandingkan nilai empiris dan simulasi. Perbedaan besar paada nilai teori ini disebabkan oleh variasi lama pelayanan pada keadaan nyata, sementara simulasi dapat menangkap kondisi fluktuatif sehingga menghasilkan estimasi yang berada di antara nilai ideal teori dan kondisi empiris.
 
 ## 👥Authors
 **Presilia**
