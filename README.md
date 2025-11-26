@@ -26,13 +26,20 @@ Diagram alir proses analisis kinerja sistem antrian menggunakan model M/G/1 yang
 ## 🔎Main Results
 ### Identifikasi dan validasi distribusi interarrival dan service time
 #### Distribusi interarrival time
-<img src="assets/HisInter.png" alt="Histogram Interarrival Time" width="400">, <img src="assets/QQInter.png" alt="QQ-Plot interarrival time" width="400">
+<img src="assets/HisInter.png" alt="Histogram Interarrival Time" width="400"> <img src="assets/QQInter.png" alt="QQ-Plot interarrival time" width="400">
 
 Distribusi waktu antar kedatangan menunjukkan pola menurun seperti eksponensial, dan itik data mengikuti garis teoretis sehingga cocok dengan distribusi eksponensial.
 
 #### Distribusi service time
-<img src="assets/HisSer.png" alt="Histogram Service Time" width="400">, <img src="assets/QQSer.png" alt="QQ-Plot Service Time" width="400">
+<img src="assets/HisSer.png" alt="Histogram Service Time" width="400"> <img src="assets/QQSer.png" alt="QQ-Plot Service Time" width="400">
+
 Pola data tidak simetris menandakan service time tidak mengikuti eksponensial. Titik menjauhi garis lurus sehingga asumsi eksponensial ditolak. Maka dilakukan uji distribusi lain
+
+<img src="assets/SWtest.png" alt="SWtest" width="400"> <img src="assets/Gammma.png" alt="Gamma" width="400">
+
+Dilakukan uji Shapiro-Wilk hasilnya menunjukkan p-value < 0.05 sehingga distribusi normal ditolak. Maka dilakukan perbandingan beberapa kandidat distribusi dan Gamma memiliki nilai AIC dan BIC paling kecil, sehingga distribusi untuk service time adalah distribusi Gamma.
+
+Maka dari itu terpilihlah model M/G/1 mengikuti interarrival time yang berdistribusi eksponensial, service time yang berdistribusi gamma, dan 1 server pelayanan yang diobservasi.
 
 ### Perhitungan ukuran kinerja sistem antrian
 ![Histogram Interarrival Time](assets/HisInter.jpg)
