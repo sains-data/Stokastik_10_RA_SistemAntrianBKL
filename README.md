@@ -71,7 +71,7 @@ Server tidak overload karena utilisasi masih di bawah 1. Namun, variabilitas pel
 | W (waktu total dalam sistem, detik) | 71.97 | 151.67 | 133.54 |
 
 **Penjelasan singkat:**  
-Hasilnya nilai empiris seluruh metrik lebih tinggi dibandingkan prediksi teoritis. Seperti pada metrik Lq (pelanggan dalam antrian), teori memprediksi 0.9 orang tetapi kenyataan mencapai 2.6 orang, dan simulasi memberikan nilai 2.1 orang yang lebih mendekati kondisi nyata. Hal yang sama terjadi pada metrik L (pelanggan dalam sistem), Wq (waktu tunggu dalam antrian), dan W (waktu total dalam sistem) yang nilai teorisnya jauh lebih rendah dibandingkan nilai empiris dan simulasi. Perbedaan besar paada nilai teori ini disebabkan oleh variasi lama pelayanan pada keadaan nyata, sementara simulasi dapat menangkap kondisi fluktuatif sehingga menghasilkan estimasi yang berada di antara nilai ideal teori dan kondisi empiris.
+Hasilnya nilai empiris seluruh metrik lebih tinggi dibandingkan prediksi teoritis. Seperti pada metrik Lq (pelanggan dalam antrian), teori memprediksi 0.9 orang tetapi kenyataan mencapai 2.7 orang, dan simulasi memberikan nilai 2.1 orang yang lebih mendekati kondisi nyata. Hal yang sama terjadi pada metrik L (pelanggan dalam sistem), Wq (waktu tunggu dalam antrian), dan W (waktu total dalam sistem) yang nilai teorisnya jauh lebih rendah dibandingkan nilai empiris dan simulasi. Perbedaan besar paada nilai teori ini disebabkan oleh variasi lama pelayanan pada keadaan nyata, sementara simulasi dapat menangkap kondisi fluktuatif sehingga menghasilkan estimasi yang berada di antara nilai ideal teori dan kondisi empiris.
 
 ## 👥Authors
 **Presilia**
