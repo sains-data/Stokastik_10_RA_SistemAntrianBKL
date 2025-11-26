@@ -20,6 +20,8 @@ Repositori ini berisikan data, kode R, dan file tambahan lainnya mengenai Analis
 - ggplot2 (Untuk visualisasi data berbasis grammar of graphics.)
 
 ## 📂Method
+Diagram alir proses analisis kinerja sistem antrian menggunakan model M/G/1 yang digunakan dalam proyek ini:
+![Diagram Alir Penelitian](gambar/Diagram.jpg)
 
 ## 🔎Main Results
 
